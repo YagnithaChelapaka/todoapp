@@ -8,7 +8,10 @@ app.use(express.static("public"));
 const port = 3000;
 
 const mongoose = require('mongoose');//calling mongodb module
-mongoose.connect("mongodb+srv://ychelapaka:4sFEYlfl5yldOR5Q@todoapp.lta3iea.mongodb.net/todo");//todo--database name
+mongoose.connect("mongodb+srv://ychelapaka:4sFEYlfl5yldOR5Q@todoapp.lta3iea.mongodb.net/todo");
+  .then(() => console.log("Connected to MongoDB"))
+    .catch(err => console.error("MongoDb connection error", err));
+//todo--database name
 //schema--structure,new keyword--it allocate a specific space in a memory
 const trySchema = new mongoose.Schema({ name: String });//create a schema
 const Item = mongoose.model("Task", trySchema);//create collection name for db
