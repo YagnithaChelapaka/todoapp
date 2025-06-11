@@ -1,35 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+<!-- saved from url=(0035)https://todo-app-t59u.onrender.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="./Todo List_files/style.css">
 </head>
-
 <body>
-    <div class="box">
-        <h1> Todo list</h1>
+  <div class="box">
+    <h1>Smart Task Scheduler</h1>
+  </div>
+
+  <div class="Box">
+    <form action="https://todo-app-t59u.onrender.com/" method="post">
+      <input type="text" name="ele1" placeholder="Enter a new task" required="">
+      <button type="submit">+</button>
+    </form>
+
+    <div class="box1">
+      
+        <form action="https://todo-app-t59u.onrender.com/delete" method="post" style="display:inline;">
+          <div class="item">
+            <input type="checkbox" name="checkbox1" value="68482c32d1a083f1a6131e89" onchange="this.form.submit()">
+            <p>python</p>
+          </div>
+        </form>
+      
+        <form action="https://todo-app-t59u.onrender.com/delete" method="post" style="display:inline;">
+          <div class="item">
+            <input type="checkbox" name="checkbox1" value="68482c3ad1a083f1a6131e8c" onchange="this.form.submit()">
+            <p>full stak</p>
+          </div>
+        </form>
+      
+        <form action="https://todo-app-t59u.onrender.com/delete" method="post" style="display:inline;">
+          <div class="item">
+            <input type="checkbox" name="checkbox1" value="68482c42d1a083f1a6131e8f" onchange="this.form.submit()">
+            <p>java</p>
+          </div>
+        </form>
+      
     </div>
-    <div class="box">
-        <% ejes.forEach(function(Items){ %>
-            <form action="/delete" method="post">
-                <div class="item">
-                    <input type="checkbox" name="checkbox1" value="<%=Items._id%>" onchange="this.form.submit()">
-                    <p>
-                        <%= Items.name %>
-                    </p>
-                </div>
-            </form>
-            <%});%>
-                <form action="/" method="post">
-                    <input type="text" name="ele1" placeholder="Enter a div task">
-
-                    <button type="submit">+</button>
-
-                </form>
-    </div>
-</body>
-
-</html>
+</div></body></html>
